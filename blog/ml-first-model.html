@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My First ML Model: What Worked, What Failed, and What I Learned — Farhan</title>
+  <meta name="description" content="Building my first logistic regression model felt like magic until it didn't. A candid breakdown of the mistakes, the debugging process, and the moment it finally clicked." />
+  <meta name="author" content="Farhan" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/blog.css" />
+</head>
+<body>
+
+  <nav class="blog-nav">
+    <div class="blog-nav-inner">
+      <a href="../index.html" class="nav-logo">F<span>.</span></a>
+      <a href="../index.html#blog" class="back-link">← Back to Blog</a>
+    </div>
+  </nav>
+
+  <main class="blog-main">
+    <div class="blog-container">
+
+      <div class="blog-header">
+        <div class="blog-meta-top">
+          <span class="blog-cat">Machine Learning</span>
+          <span class="blog-date">April 2025</span>
+          <span class="read-time">6 min read</span>
+        </div>
+        <h1>My First ML Model: What Worked, What Failed, and What I Learned</h1>
+        <p class="blog-subtitle">Building my first logistic regression model felt like magic — until it didn't. A candid breakdown of the mistakes, the debugging process, and the moment it finally clicked.</p>
+        <div class="blog-author">
+          <div class="author-dot"></div>
+          <span>By <strong>Farhan</strong></span>
+        </div>
+      </div>
+
+      <div class="blog-body">
+
+        <p>The first time I ran a logistic regression model and saw an accuracy score of 94%, I genuinely thought I was a machine learning engineer. I screenshot it. I was proud. I was also completely wrong about what that number meant.</p>
+
+        <p>This is the honest story of building my first real ML model — what I got wrong, what I had to unlearn, and what I'd tell myself if I could start over.</p>
+
+        <h2>The Setup</h2>
+
+        <p>I was working with a binary classification dataset — the goal was to predict whether a customer would churn or not based on behavioural features. Classic beginner project. I loaded the data, ran <code>LogisticRegression().fit(X, y)</code>, called <code>.score()</code> and saw 94%. Done, right?</p>
+
+        <p>Not even close.</p>
+
+        <h2>Mistake 1 — I Didn't Look at the Class Distribution</h2>
+
+        <p>That 94% accuracy? The dataset was 93% class 0 (no churn) and only 7% class 1 (churn). My model had learned to predict "no churn" for almost everything and still scored 94%. It was useless for the actual problem — predicting who would churn.</p>
+
+        <p>This is called the <strong>accuracy paradox</strong> and it's one of the most common traps in beginner ML work. If I'd just plotted a value counts chart before touching the model, I would have caught it immediately.</p>
+
+        <p><strong>What I did:</strong> Used <code>class_weight='balanced'</code> in scikit-learn and applied SMOTE to oversample the minority class. Accuracy dropped to 81% but my F1-score on the churn class went from 0.12 to 0.87. That's the number that actually matters.</p>
+
+        <h2>Mistake 2 — I Trained and Tested on the Same Data</h2>
+
+        <p>My first iteration didn't use a train-test split. I was evaluating my model on the exact data it had learned from — of course it performed well. This is data leakage and it makes your model completely unreliable in the real world.</p>
+
+        <p><strong>What I did:</strong> Applied <code>train_test_split</code> with an 80/20 split and stratified sampling so both splits had the same class ratio. Suddenly the model's real performance was visible.</p>
+
+        <h2>Mistake 3 — Raw Features Straight Into the Model</h2>
+
+        <p>I had features on completely different scales — one column ranged from 0 to 1, another from 1000 to 900,000. Logistic regression is sensitive to feature scale because it uses gradient descent. My model was essentially ignoring the small-scale features.</p>
+
+        <p><strong>What I did:</strong> Built a proper preprocessing pipeline using <code>StandardScaler</code> for numerical features and <code>OneHotEncoder</code> for categoricals, wrapped in a <code>ColumnTransformer</code>. This became the reusable pipeline I now use as a starting point for every model.</p>
+
+        <h2>The Moment It Finally Clicked</h2>
+
+        <p>After fixing all three issues, I ran the evaluation properly — confusion matrix, classification report, ROC-AUC curve. The model wasn't perfect. But it was <em>honest</em>. I could see exactly where it struggled, which classes it confused, and where more data or feature engineering would help.</p>
+
+        <p>That's the real skill in ML — not getting a high number, but understanding what your number actually means and knowing how to interrogate it.</p>
+
+        <h2>What I'd Tell Myself on Day One</h2>
+
+        <p>Before you touch a model, spend 80% of your time understanding your data. Plot everything. Check class distributions. Look at missing values. Understand what each feature actually represents in the real world.</p>
+
+        <p>A model is only as honest as the pipeline that feeds it. Get the pipeline right and the model almost takes care of itself.</p>
+
+        <div class="blog-closing">
+          <p>The final model achieved 89% accuracy and an F1-score of 0.87 on the minority class — results I'm actually confident in because I understand exactly how they were produced. That confidence is worth more than any impressive-looking number.</p>
+        </div>
+
+      </div>
+
+      <div class="blog-footer-nav">
+        <a href="facebook-ads-zwiry.html" class="back-btn">← Previous Article</a>
+        <a href="tahwar-wedding-industry.html" class="next-btn">Next Article →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="blog-foot">
+    <div class="blog-nav-inner">
+      <p>© 2026 Farhan</p>
+      <a href="../index.html">Portfolio</a>
+    </div>
+  </footer>
+
+</body>
+</html>

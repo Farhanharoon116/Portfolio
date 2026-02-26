@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title>Farhan — Digital Marketing & AI Student | Portfolio</title>
+  <meta name="description" content="Farhan is a Digital Marketing & AI student building data-driven digital experiences and scalable online brands. Founder of Zwiry. ML builder. Ads strategist." />
+  <meta name="keywords" content="Farhan, Digital Marketing, AI, Machine Learning, Python, Facebook Ads, Zwiry, Tahwar, Portfolio, Pakistan" />
+  <meta name="author" content="Farhan" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://farhan.dev/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://farhan.dev/" />
+  <meta property="og:title" content="Farhan — Digital Marketing & AI Student" />
+  <meta property="og:description" content="Building Data-Driven Digital Experiences & Scalable Online Brands. Founder of Zwiry. ML builder. Ads strategist." />
+  <meta property="og:image" content="https://farhan.dev/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Farhan — Digital Marketing & AI Student" />
+  <meta name="twitter:description" content="Building Data-Driven Digital Experiences & Scalable Online Brands." />
+  <meta name="twitter:image" content="https://farhan.dev/og-image.png" />
+
+  <!-- JSON-LD Person Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Farhan",
+    "url": "https://farhan.dev",
+    "jobTitle": "Digital Marketing & AI Student",
+    "description": "Building data-driven digital experiences and scalable online brands. Founder of Zwiry clothing brand, ML practitioner, and Facebook Ads strategist.",
+    "sameAs": ["https://github.com/farhan","https://linkedin.com/in/farhan"],
+    "knowsAbout": ["Digital Marketing","Machine Learning","Python","Facebook Ads","Brand Strategy","Data Analysis"]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">F<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"        class="nav-link">About</a></li>
+        <li><a href="#projects"     class="nav-link">Projects</a></li>
+        <li><a href="#journey"      class="nav-link">Journey</a></li>
+        <li><a href="#services"     class="nav-link">Services</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#blog"         class="nav-link">Blog</a></li>
+        <li><a href="#contact"      class="nav-link">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="hero">
+    <canvas class="hero-canvas" id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">Hello, I'm</p>
+      <h1 class="hero-name reveal-up">Farhan<span class="dot">.</span></h1>
+      <p class="hero-title reveal-up">Digital Marketing &amp; AI Student</p>
+      <p class="hero-tagline reveal-up">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </p>
+      <div class="hero-cta reveal-up">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="resume.pdf" download class="btn btn-ghost">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+          Download Resume
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ══════════ ABOUT ══════════ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label reveal-up">/ About Me</div>
+      <div class="about-grid">
+
+        <div class="about-left reveal-left">
+          <!-- PHOTO PLACEHOLDER
+               When you have your photo ready:
+               1. Add your image to an "images/" folder
+               2. Comment out the .about-photo-placeholder div below
+               3. Uncomment the <img> tag and set the correct src path
+          -->
+          <div class="about-photo-wrapper">
+            <!--<div class="about-photo-placeholder">
+              <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="rgba(233,69,96,0.45)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              <p>Your Photo Here</p>
+              <code>images/farhan.jpg</code>
+            </div> -->
+            <img src="images/farhan.png" alt="Farhan" class="about-photo" />
+            <div class="photo-ring"></div>
+            <div class="photo-glow"></div>
+          </div>
+          <h2 class="section-title" style="margin-top:32px">Bridging<br/><em>Data &amp; Strategy</em></h2>
+          <p class="about-bio">I'm Farhan — a Digital Marketing &amp; AI student who combines Python and machine learning with hands-on marketing execution to build brands that actually grow.</p>
+          <p class="about-bio">As founder of <strong>Zwiry</strong> and the architect of <strong>Tahwar.pk</strong>, I've taken ideas from whiteboard to launch. I don't just study these things — I build with them.</p>
+        </div>
+
+        <div class="about-right reveal-right">
+          <div class="skill-group">
+            <h4>Programming</h4>
+            <div class="skill-bar">
+              <div class="skill-top"><span class="skill-label">Python</span><span class="skill-pct">82%</span></div>
+              <div class="bar"><div class="bar-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-top"><span class="skill-label">JavaScript</span><span class="skill-pct">70%</span></div>
+              <div class="bar"><div class="bar-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-top"><span class="skill-label">C++</span><span class="skill-pct">55%</span></div>
+              <div class="bar"><div class="bar-fill" data-width="55"></div></div>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>AI &amp; Data</h4>
+            <div class="skill-bar">
+              <div class="skill-top"><span class="skill-label">Machine Learning</span><span class="skill-pct">72%</span></div>
+              <div class="bar"><div class="bar-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-top"><span class="skill-label">Data Preprocessing</span><span class="skill-pct">78%</span></div>
+              <div class="bar"><div class="bar-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-top"><span class="skill-label">Model Evaluation</span><span class="skill-pct">68%</span></div>
+              <div class="bar"><div class="bar-fill" data-width="68"></div></div>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h4>Digital Marketing</h4>
+            <div class="skill-bar">
+              <div class="skill-top"><span class="skill-label">Facebook Ads</span><span class="skill-pct">85%</span></div>
+              <div class="bar"><div class="bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-top"><span class="skill-label">Funnel Strategy</span><span class="skill-pct">80%</span></div>
+              <div class="bar"><div class="bar-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-top"><span class="skill-label">Brand Positioning</span><span class="skill-pct">75%</span></div>
+              <div class="bar"><div class="bar-fill" data-width="75"></div></div>
+            </div>
+          </div>
+          <div class="tools-strip">
+            <span class="tool-chip">GitHub</span>
+            <span class="tool-chip">Vercel</span>
+            <span class="tool-chip">Canva</span>
+            <span class="tool-chip">Meta Ads Manager</span>
+            <span class="tool-chip">scikit-learn</span>
+            <span class="tool-chip">Jupyter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ STATS ══════════ -->
+  <section class="stats" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal-up">
+          <div class="stat-number"><span class="counter" data-target="10">0</span><span class="stat-plus">+</span></div>
+          <p>Projects Built</p>
+        </div>
+        <div class="stat-item reveal-up">
+          <div class="stat-number"><span class="counter" data-target="3">0</span><span class="stat-plus">+</span></div>
+          <p>AI Models Developed</p>
+        </div>
+        <div class="stat-item reveal-up">
+          <div class="stat-number"><span class="counter" data-target="2">0</span><span class="stat-plus">+</span></div>
+          <p>Startup Concepts</p>
+        </div>
+        <div class="stat-item reveal-up">
+          <div class="stat-number"><span class="counter" data-target="100">0</span><span class="stat-plus">%</span></div>
+          <p>Commitment to Growth</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PROJECTS ══════════ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label reveal-up">/ Projects</div>
+      <h2 class="section-title reveal-up">Selected<br/><em>Work</em></h2>
+      <div class="filter-bar reveal-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="marketing">Marketing</button>
+        <button class="filter-btn" data-filter="ai">AI</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal-up" data-category="marketing"
+          data-title="Zwiry — Clothing Brand"
+          data-tag="Marketing · Brand · E-commerce"
+          data-desc="Founded and scaled a clothing brand from zero to launch. Built the entire brand identity, ran targeted Facebook Ads campaigns, optimized the purchase funnel, and managed product strategy end-to-end."
+          data-outcomes='["Achieved 3× ROAS on first Facebook Ads campaign","Built full brand identity: logo, colour palette, brand voice","Designed purchase funnel from cold traffic to conversion","Managed product catalogue and supplier relationships"]'
+          data-tech="Facebook Ads · Canva · Meta Business Suite · Funnel Strategy">
+          <div class="card-img">
+            <div class="card-img-inner" style="background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)">
+              <svg width="54" height="54" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="20" stroke="#e94560" stroke-width="2"/><path d="M20 30 Q30 18 40 30 Q30 42 20 30Z" fill="#e94560" opacity="0.4"/><circle cx="30" cy="30" r="4" fill="#e94560"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Marketing · Brand</span>
+            <h3>Zwiry</h3>
+            <p>Clothing brand founded from scratch — full brand identity, Facebook Ads (3× ROAS), and end-to-end funnel strategy.</p>
+            <div class="card-outcomes">
+              <span class="outcome-chip">3× ROAS</span>
+              <span class="outcome-chip">Full Funnel</span>
+              <span class="outcome-chip">Brand Identity</span>
+            </div>
+            <button class="card-btn open-modal">View Case Study →</button>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" data-category="web"
+          data-title="Tahwar.pk — Wedding Aggregator"
+          data-tag="Web · Startup · Product"
+          data-desc="Conceptualised and designed a wedding service aggregator for the Pakistani market. Conducted market research, built the business model, designed user flows, and crafted a phased go-to-market strategy."
+          data-outcomes='["Identified $2B+ underserved wedding services market in Pakistan","Designed complete user flow for vendors and couples","Built phased GTM strategy starting with Lahore and Karachi","Validated concept through primary user interviews"]'
+          data-tech="Market Research · Product Design · Business Modelling · GTM Strategy">
+          <div class="card-img">
+            <div class="card-img-inner" style="background:linear-gradient(135deg,#0f2027,#203a43,#2c5364)">
+              <svg width="54" height="54" viewBox="0 0 60 60" fill="none"><rect x="15" y="20" width="30" height="22" rx="3" stroke="#43c6ac" stroke-width="2"/><path d="M22 20V16a8 8 0 0116 0v4" stroke="#43c6ac" stroke-width="2"/><circle cx="30" cy="31" r="3" fill="#43c6ac" opacity="0.7"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Web · Startup</span>
+            <h3>Tahwar.pk</h3>
+            <p>Wedding service aggregator for Pakistan — market research, business model, user flow design, and GTM strategy.</p>
+            <div class="card-outcomes">
+              <span class="outcome-chip">$2B+ Market</span>
+              <span class="outcome-chip">GTM Strategy</span>
+              <span class="outcome-chip">User Research</span>
+            </div>
+            <button class="card-btn open-modal">View Case Study →</button>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" data-category="ai"
+          data-title="ML Customer Segmentation"
+          data-tag="AI · Data Science · Python"
+          data-desc="Built an end-to-end customer segmentation pipeline using unsupervised ML in Python. Applied K-Means clustering, tuned clusters using the Elbow Method, and produced actionable segment profiles."
+          data-outcomes='["Achieved silhouette score of 0.71 across 4 customer clusters","Reduced preprocessing noise by 38% with feature scaling pipeline","Identified 2 high-value segments for targeted campaigns","Delivered business recommendations per segment"]'
+          data-tech="Python · scikit-learn · K-Means · Pandas · Matplotlib · Jupyter">
+          <div class="card-img">
+            <div class="card-img-inner" style="background:linear-gradient(135deg,#141e30,#243b55)">
+              <svg width="54" height="54" viewBox="0 0 60 60" fill="none"><circle cx="24" cy="26" r="7" stroke="#f7971e" stroke-width="1.5" stroke-dasharray="3 2"/><circle cx="38" cy="34" r="6" stroke="#f7971e" stroke-width="1.5"/><circle cx="22" cy="40" r="5" stroke="#f7971e" stroke-width="1.5" opacity="0.6"/><circle cx="24" cy="26" r="2.5" fill="#f7971e"/><circle cx="38" cy="34" r="2.5" fill="#f7971e"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">AI · Data Science</span>
+            <h3>ML Segmentation</h3>
+            <p>K-Means clustering pipeline with 0.71 silhouette score — 4 actionable customer segments with business recommendations.</p>
+            <div class="card-outcomes">
+              <span class="outcome-chip">0.71 Silhouette</span>
+              <span class="outcome-chip">4 Segments</span>
+              <span class="outcome-chip">Python</span>
+            </div>
+            <button class="card-btn open-modal">View Case Study →</button>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" data-category="ai"
+          data-title="Logistic Regression & Classification"
+          data-tag="AI · Classification · Model Evaluation"
+          data-desc="Developed binary and multi-class classification models with logistic regression. Built a complete ML pipeline from data ingestion through feature engineering, training, hyperparameter tuning, and evaluation."
+          data-outcomes='["Achieved 89% accuracy on binary classification task","F1-score of 0.87 on imbalanced dataset using SMOTE","Implemented ROC-AUC analysis and confusion matrix reporting","Built reusable preprocessing pipeline for future models"]'
+          data-tech="Python · scikit-learn · Logistic Regression · SMOTE · ROC-AUC · Jupyter">
+          <div class="card-img">
+            <div class="card-img-inner" style="background:linear-gradient(135deg,#1c1c1c,#2d1f3d)">
+              <svg width="54" height="54" viewBox="0 0 60 60" fill="none"><polyline points="12,44 20,30 28,36 38,18 48,24" stroke="#a18cd1" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="48" cy="24" r="3" fill="#a18cd1"/><circle cx="38" cy="18" r="3" fill="#a18cd1"/></svg>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="card-tag">AI · Classification</span>
+            <h3>Classification Models</h3>
+            <p>Logistic regression pipeline achieving 89% accuracy and 0.87 F1-score with full ROC-AUC evaluation.</p>
+            <div class="card-outcomes">
+              <span class="outcome-chip">89% Accuracy</span>
+              <span class="outcome-chip">0.87 F1</span>
+              <span class="outcome-chip">ROC-AUC</span>
+            </div>
+            <button class="card-btn open-modal">View Case Study →</button>
+          </div>
+        </div>
+        <div class="project-card reveal-up" data-category="ai"
+  data-cert="images/iba-certificate.png"
+  data-github="https://github.com/Farhanharoon116/SAF-Trainers-Machine-learning"
+  data-title="IBA Hackfest x Datathon — Machine Learning"
+  data-tag="AI · Datathon · IBA Karachi"
+  data-desc="Participated in the Machine Learning module at Hackfest Datathon, organised by Google Developer Group IBA and IBA Data Science Society. Competed in a live, time-pressured ML challenge alongside university-level data scientists at IBA Karachi on 14th–15th February 2026."
+  data-outcomes='["Earned official Certificate of Participation from GDG IBA & IBA Data Science Society","Competed in live ML challenge at one of Pakistans top university tech events","Applied real-world data preprocessing and model building under time pressure","Collaborated and networked with data science students across Karachi"]'
+  data-tech="Python · scikit-learn · Machine Learning · Data Preprocessing · IBA Karachi · Feb 2026">
+  <div class="card-img">
+    <div class="card-img-inner" style="background:linear-gradient(135deg,#1a0533,#3b1f6b,#5c2d9e)">
+      <svg width="54" height="54" viewBox="0 0 60 60" fill="none">
+        <polygon points="30,8 36,22 52,22 40,32 44,47 30,38 16,47 20,32 8,22 24,22" stroke="#a78bfa" stroke-width="1.8" fill="rgba(167,139,250,0.15)" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+  <div class="card-body">
+    <span class="card-tag">AI · Datathon · IBA</span>
+    <h3>IBA Hackfest x Datathon</h3>
+    <p>Participated in the Machine Learning module at GDG IBA & IBA Data Science Society's Hackfest Datathon — Feb 2026.</p>
+    <div class="card-outcomes">
+      <span class="outcome-chip">Certified</span>
+      <span class="outcome-chip">GDG IBA</span>
+      <span class="outcome-chip">Live ML Challenge</span>
+    </div>
+    <button class="card-btn open-modal">View Case Study →</button>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ PROJECT MODAL ══════════ -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Close modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <span class="modal-tag" id="modalTag"></span>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-section">
+        <h4>Key Outcomes</h4>
+        <ul class="modal-outcomes" id="modalOutcomes"></ul>
+      </div>
+      <div class="modal-section">
+        <h4>Tools &amp; Technologies</h4>
+        <p class="modal-tech" id="modalTech"></p>
+      </div>
+      <div class="modal-section" id="modalCert" style="display:none"></div>
+      <div class="modal-section" id="modalLink" style="display:none"></div>
+    </div>
+  </div>
+
+  <!-- ══════════ JOURNEY / TIMELINE ══════════ -->
+  <section class="journey section" id="journey">
+    <div class="container">
+      <div class="section-label reveal-up">/ My Journey</div>
+      <h2 class="section-title reveal-up">From Curiosity<br/><em>to Creation</em></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-marker"><div class="timeline-dot"></div></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2021</span>
+            <h3>First Line of Code</h3>
+            <p>Started learning Python through self-study. Fell in love with how logic can translate into real, tangible outcomes.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-marker"><div class="timeline-dot"></div></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022</span>
+            <h3>Entered Digital Marketing</h3>
+            <p>Ran my first Facebook Ads campaign. Discovered the power of data-driven marketing and became obsessed with funnels, ROAS, and consumer psychology.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-marker"><div class="timeline-dot"></div></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2023</span>
+            <h3>Founded Zwiry</h3>
+            <p>Launched a clothing brand from scratch — handled brand identity, product sourcing, and paid ads. Achieved 3× ROAS on the first campaign.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-right">
+          <div class="timeline-marker"><div class="timeline-dot"></div></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024</span>
+            <h3>Dove Into Machine Learning</h3>
+            <p>Began formal ML study. Built my first classification and clustering models. Realised that combining AI with marketing is a powerful, underutilised edge.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-left">
+          <div class="timeline-marker"><div class="timeline-dot active"></div></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 — Present</span>
+            <h3>Building &amp; Consulting</h3>
+            <p>Conceptualised Tahwar.pk. Expanding ML expertise. Consulting on brand growth through data-driven strategy while continuing to ship real projects.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ SERVICES & PRICING ══════════ -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-label reveal-up">/ Services</div>
+      <h2 class="section-title reveal-up">Plans &amp;<br/><em>Pricing</em></h2>
+      <p class="section-sub reveal-up">Transparent packages built around real business outcomes — not vanity metrics.</p>
+      <div class="pricing-grid">
+
+        <div class="pricing-card reveal-up">
+          <div class="pricing-top">
+            <span class="pricing-name">Starter</span>
+            <div class="pricing-price">$<span class="counter" data-target="99">0</span></div>
+            <p class="pricing-period">one-time project</p>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="feat-check">✓</span>Brand Strategy Session</li>
+            <li><span class="feat-check">✓</span>Social Media Audit</li>
+            <li><span class="feat-check">✓</span>1 Facebook Ad Campaign</li>
+            <li><span class="feat-check">✓</span>Basic Analytics Report</li>
+            <li class="dim"><span>✗</span>ML Data Analysis</li>
+            <li class="dim"><span>✗</span>Funnel Build-Out</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost-small">Get Started</a>
+        </div>
+
+        <div class="pricing-card featured reveal-up">
+          <div class="pricing-badge">Most Popular</div>
+          <div class="pricing-top">
+            <span class="pricing-name">Professional</span>
+            <div class="pricing-price">$<span class="counter" data-target="249">0</span></div>
+            <p class="pricing-period">per month</p>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="feat-check">✓</span>Full Funnel Strategy</li>
+            <li><span class="feat-check">✓</span>3 Ad Campaigns (A/B)</li>
+            <li><span class="feat-check">✓</span>Brand Positioning Deck</li>
+            <li><span class="feat-check">✓</span>ML-Based Audience Insights</li>
+            <li><span class="feat-check">✓</span>Monthly Growth Report</li>
+            <li class="dim"><span>✗</span>Custom Integrations</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <div class="pricing-card reveal-up">
+          <div class="pricing-top">
+            <span class="pricing-name">Premium</span>
+            <div class="pricing-price">$<span class="counter" data-target="499">0</span></div>
+            <p class="pricing-period">per month</p>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="feat-check">✓</span>Everything in Professional</li>
+            <li><span class="feat-check">✓</span>Custom ML Model Build</li>
+            <li><span class="feat-check">✓</span>Full-Stack Funnel Dev</li>
+            <li><span class="feat-check">✓</span>Startup Consulting</li>
+            <li><span class="feat-check">✓</span>Weekly Strategy Calls</li>
+            <li><span class="feat-check">✓</span>Priority Support 24/7</li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost-small">Get Started</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ TESTIMONIALS ══════════ -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-label reveal-up">/ What People Say</div>
+      <h2 class="section-title reveal-up">Trusted by<br/><em>Collaborators</em></h2>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card reveal-up">
+          <div class="t-stars">★★★★★</div>
+          <p>"Farhan's approach to Facebook Ads is unlike most students I've seen — he thinks in funnels and outcomes, not just clicks. The ROAS results from Zwiry speak for themselves."</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background:linear-gradient(135deg,#e94560,#f7971e)">A</div>
+            <div><strong>Ali Hassan</strong><span>Entrepreneurship Mentor</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal-up">
+          <div class="t-stars">★★★★★</div>
+          <p>"Working with Farhan on Tahwar.pk was impressive — thorough market research, a sound business model, and GTM thinking that showed real commercial maturity."</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background:linear-gradient(135deg,#43c6ac,#0052d4)">S</div>
+            <div><strong>Sara Khan</strong><span>Startup Advisor</span></div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal-up">
+          <div class="t-stars">★★★★★</div>
+          <p>"One of the most driven students I've seen combining ML knowledge with real-world marketing. His segmentation project demonstrated genuine analytical thinking."</p>
+          <div class="t-author">
+            <div class="t-avatar" style="background:linear-gradient(135deg,#a18cd1,#fbc2eb)">R</div>
+            <div><strong>Dr. Raza Mirza</strong><span>AI &amp; Data Science Lecturer</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ BLOG ══════════ -->
+  <section class="blog section" id="blog">
+    <div class="container">
+      <div class="section-label reveal-up">/ Insights</div>
+      <h2 class="section-title reveal-up">Thoughts &amp;<br/><em>Learnings</em></h2>
+      <div class="blog-grid">
+
+        <article class="blog-card reveal-up">
+          <div class="blog-meta">
+            <span class="blog-cat">Digital Marketing</span>
+            <span class="blog-date">May 2025</span>
+          </div>
+          <h3>What Running Facebook Ads for Zwiry Taught Me About Consumer Psychology</h3>
+          <p>I thought running ads was about targeting the right audience. I was wrong. Here's what actually drove conversions and what I'd do differently from day one.</p>
+          <a href="blog/facebook-ads-zwiry.html" class="blog-link">Read Article →</a>
+        </article>
+
+        <article class="blog-card reveal-up">
+          <div class="blog-meta">
+            <span class="blog-cat">Machine Learning</span>
+            <span class="blog-date">Apr 2025</span>
+          </div>
+          <h3>My First ML Model: What Worked, What Failed, and What I Learned</h3>
+          <p>Building my first logistic regression model felt like magic — until it didn't. A candid breakdown of the mistakes, debugging process, and the moment it finally clicked.</p>
+          <a href="blog/ml-first-model.html" class="blog-link">Read Article →</a>
+        </article>
+
+        <article class="blog-card reveal-up">
+          <div class="blog-meta">
+            <span class="blog-cat">Startups</span>
+            <span class="blog-date">Mar 2025</span>
+          </div>
+          <h3>Why Pakistan's Wedding Industry Needs a Tech Layer — And How I'd Build It</h3>
+          <p>The wedding industry in Pakistan is massive, fragmented, and almost entirely offline. Here's the full thinking behind Tahwar.pk — the gap, the model, and the path to traction.</p>
+          <a href="blog/tahwar-wedding-industry.html" class="blog-link">Read Article →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTACT ══════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label reveal-up">/ Contact</div>
+      <h2 class="section-title reveal-up">Let's<br/><em>Connect</em></h2>
+      <div class="contact-grid">
+
+        <div class="contact-info reveal-left">
+          <p>Have a project in mind, want to collaborate, or just want to talk marketing and AI? Drop a message — I respond within 24 hours.</p>
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:Haroonfarhan110@gmail.com">Haroonfarhan110@gmail.com</a>
+            </div>
+            <div class="contact-detail-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Karachi, Pakistan</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Farhanharoon116" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.505.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.2 22 16.447 22 12.021 22 6.484 17.522 2 12 2z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/farhan-haroon-824303331/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3A2 2 0 0121 5v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zm-.5 15.5v-5.3a3.26 3.26 0 00-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 011.4 1.4v4.93h2.79zM6.88 8.56a1.68 1.68 0 001.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 00-1.69 1.69c0 .93.76 1.68 1.69 1.68zm1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+            </a>
+            <a href="mailto:haroonfarhan110@gmail.com" class="social-link" aria-label="Email">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal-right" id="contactForm" novalidate>
+          <div class="form-group">
+            <input type="text" id="fname" name="from_name" placeholder="Your Name" autocomplete="off" />
+            <label for="fname">Your Name</label>
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="femail" name="reply_to" placeholder="Your Email" autocomplete="off" />
+            <label for="femail">Your Email</label>
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <input type="text" id="fsubject" name="subject" placeholder="Subject" autocomplete="off" />
+            <label for="fsubject">Subject</label>
+            <span class="form-error" id="subjectError"></span>
+          </div>
+          <div class="form-group">
+            <textarea id="fmessage" name="message" rows="5" placeholder="Your Message"></textarea>
+            <label for="fmessage">Your Message</label>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">
+            <span id="btnText">Send Message →</span>
+            <span id="btnLoader" style="display:none">Sending…</span>
+          </button>
+          <p class="form-success" id="formSuccess">✓ Message sent! I'll reply within 24 hours.</p>
+          <p class="form-fail" id="formFail">Something went wrong. Email me directly at haroonfarhan110@gmail.com</p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a href="#hero" class="footer-logo">F<span>.</span></a>
+        <p>© 2026 Farhan. Crafted with precision.</p>
+      </div>
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

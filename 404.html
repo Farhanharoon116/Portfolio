@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page Not Found | Farhan</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #080b10;
+      --red: #e94560;
+      --teal: #43c6ac;
+      --t1: #f0f2f5;
+      --t2: #8892a4;
+      --t3: #4e5a6b;
+      --border: rgba(255,255,255,0.08);
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--t1);
+      font-family: 'DM Sans', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 24px;
+      min-height: 100vh;
+    }
+    .wrap { max-width: 520px; }
+    .big-num {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(7rem, 20vw, 12rem);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      color: transparent;
+      -webkit-text-stroke: 1.5px var(--red);
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--t1);
+      margin-bottom: 16px;
+    }
+    p {
+      font-size: 1rem;
+      color: var(--t2);
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+    a.btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      background: var(--red);
+      color: #fff;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 8px 32px rgba(233,69,96,0.3);
+    }
+    a.btn:hover { transform: translateY(-2px); box-shadow: 0 14px 40px rgba(233,69,96,0.45); }
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: var(--border);
+      margin: 0 auto 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="big-num">404</div>
+    <h1>Page Not Found</h1>
+    <div class="divider"></div>
+    <p>Looks like this page doesn't exist. Maybe it was moved, deleted, or the URL was mistyped. Let's get you back on track.</p>
+    <a href="/" class="btn">← Back to Home</a>
+  </div>
+</body>
+</html>
