@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Building with Intelligence — Farhan's Blog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Epilogue:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#070707;--surf:#101010;--surf2:#181818;
+  --tx:#F0EDE4;--mt:#6e6b64;--dim:#252525;
+  --ac:#FF6B2B;--aca:rgba(255,107,43,.13);
+  --gold:#C9A84C;--grn:#3ecf6e;
+  --fd:'Syne',sans-serif;--fb:'Epilogue',sans-serif;--fm:'JetBrains Mono',monospace;
+  --ease:cubic-bezier(.25,.46,.45,.94);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:var(--fb);font-weight:300;line-height:1.7;overflow-x:hidden;cursor:none}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--ac);color:var(--bg)}
+::-webkit-scrollbar{width:2px}::-webkit-scrollbar-thumb{background:var(--ac)}
+
+/* CURSOR (Simplified for Blog) */
+#cur{position:fixed;width:10px;height:10px;background:var(--ac);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);top:0;left:0}
+#cring{position:fixed;width:38px;height:38px;border:1px solid rgba(255,107,43,.4);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);top:0;left:0}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;width:100%;padding:18px 44px;display:flex;align-items:center;justify-content:space-between;z-index:900;background:rgba(7,7,7,0.8);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,0.05)}
+.nlogo{font-family:var(--fd);font-weight:800;font-size:1rem;letter-spacing:-.02em}
+.nlogo b{color:var(--ac)}
+.nbtn{font-family:var(--fm);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;padding:9px 20px;background:var(--ac);color:var(--bg);border:none;cursor:none;font-weight:500;transition:transform .15s;display:inline-flex;align-items:center}
+
+/* BLOG WRAPPER */
+.W{max-width:800px;margin:0 auto;padding:140px 44px 100px}
+.b-meta{font-family:var(--fm);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ac);margin-bottom:1rem;display:flex;align-items:center;gap:1.5rem}
+.b-title{font-family:var(--fd);font-weight:800;font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;letter-spacing:-.03em;margin-bottom:2.5rem}
+.b-content{font-size:1.1rem;color:rgba(240,237,228,0.8);line-height:1.8}
+.b-content p{margin-bottom:1.8rem}
+.b-content h2{font-family:var(--fd);font-weight:700;font-size:1.6rem;color:var(--tx);margin:3rem 0 1.2rem}
+.b-content blockquote{border-left:2px solid var(--ac);padding-left:1.5rem;font-style:italic;color:var(--mt);margin:2rem 0}
+.b-content mark{background:var(--aca);color:var(--ac);padding:0 4px}
+
+/* FOOTER */
+footer{padding:4rem 0;border-top:1px solid rgba(255,255,255,.05);text-align:center}
+.fcp{font-family:var(--fm);font-size:.58rem;letter-spacing:.1em;color:var(--dim)}
+
+@media(max-width:600px){
+  .W{padding-left:20px;padding-right:20px;padding-top:100px}
+}
+</style>
+</head>
+<body>
+<div id="cur"></div><div id="cring"></div>
+
+<nav>
+  <a href="../index.html" class="nlogo">F<b>.</b></a>
+  <a href="../index.html#blog" class="nbtn">← Back to Blog</a>
+</nav>
+
+<article class="W">
+  <div class="b-meta">
+    <span>Mar 28, 2026</span>
+    <span>AI Development</span>
+  </div>
+  <h1 class="b-title">Building with Intelligence: Why I'm Bet on Local LLMs in 2026</h1>
+  
+  <div class="b-content">
+    <p>In the early days of the AI boom, everything was in the cloud. We sent our data to massive servers, waited for a response, and accepted the latency and privacy trade-offs because the power was simply unparalleled. But as we step further into 2026, the tide is turning.</p>
+
+    <p>For builders like us in Pakistan, the "Cloud-First" model presents unique challenges. Electricity costs, fluctuating bandwidth, and data sovereignty aren't just buzzwords—they are structural hurdles. This is why I'm increasingly betting on <strong>Local LLMs</strong>.</p>
+
+    <h2>The Privacy Multiplier</h2>
+    <p>When I built <em>MedFlow</em>, a clinic management SaaS, the biggest concern from doctors wasn't the AI's accuracy—it was where the patient data went. By moving inference from a remote API to a local environment, we don't just gain speed; we gain 100% trust. In 2026, trust is the most valuable currency in tech.</p>
+
+    <blockquote>"AI shouldn't be a black box that lives in a data center halfway across the world. It should be a tool that stays in the room where it's needed."</blockquote>
+
+    <h2>The Karachi Roadmap</h2>
+    <p>My current focus is on optimizing models like Llama 4-mini and Mistral-v5 to run on consumer-grade hardware. We're talking Urdu-specialized models that can understand local dialects without requiring a fiber-optic connection. The goal is to build products that work in a clinic in North Nazimabad just as well as they do in a skyscraper in Dubai.</p>
+
+    <p>If you're a developer reading this, start looking at <em>llama.cpp</em> and <em>Hugging Face's Candle</em>. The future isn't just intelligent; it's decentralized.</p>
+  </div>
+</article>
+
+<footer>
+  <div class="fcp">© 2026 Farhan — Crafted with intention.</div>
+</footer>
+
+<script>
+const cur=document.getElementById('cur'),cring=document.getElementById('cring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
+(function loop(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;cring.style.left=rx+'px';cring.style.top=ry+'px';requestAnimationFrame(loop)})();
+function hv(sel){document.querySelectorAll(sel).forEach(el=>{el.addEventListener('mouseenter',()=>{cur.style.width='5px';cur.style.height='5px';cring.style.width='54px';cring.style.height='54px';cring.style.borderColor='#FF6B2B'});el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';cring.style.width='38px';cring.style.height='38px';cring.style.borderColor='rgba(255,107,43,.4)'})})}
+hv('a,button');
+</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>The Death of Generic Funnels — Farhan's Blog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Epilogue:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --bg:#070707;--surf:#101010;--surf2:#181818;
+  --tx:#F0EDE4;--mt:#6e6b64;--dim:#252525;
+  --ac:#FF6B2B;--aca:rgba(255,107,43,.13);
+  --gold:#C9A84C;--grn:#3ecf6e;
+  --fd:'Syne',sans-serif;--fb:'Epilogue',sans-serif;--fm:'JetBrains Mono',monospace;
+  --ease:cubic-bezier(.25,.46,.45,.94);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--tx);font-family:var(--fb);font-weight:300;line-height:1.7;overflow-x:hidden;cursor:none}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--ac);color:var(--bg)}
+::-webkit-scrollbar{width:2px}::-webkit-scrollbar-thumb{background:var(--ac)}
+
+/* CURSOR (Simplified for Blog) */
+#cur{position:fixed;width:10px;height:10px;background:var(--ac);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);top:0;left:0}
+#cring{position:fixed;width:38px;height:38px;border:1px solid rgba(255,107,43,.4);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);top:0;left:0}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;width:100%;padding:18px 44px;display:flex;align-items:center;justify-content:space-between;z-index:900;background:rgba(7,7,7,0.8);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,0.05)}
+.nlogo{font-family:var(--fd);font-weight:800;font-size:1rem;letter-spacing:-.02em}
+.nlogo b{color:var(--ac)}
+.nbtn{font-family:var(--fm);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;padding:9px 20px;background:var(--ac);color:var(--bg);border:none;cursor:none;font-weight:500;transition:transform .15s;display:inline-flex;align-items:center}
+
+/* BLOG WRAPPER */
+.W{max-width:800px;margin:0 auto;padding:140px 44px 100px}
+.b-meta{font-family:var(--fm);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;color:var(--ac);margin-bottom:1rem;display:flex;align-items:center;gap:1.5rem}
+.b-title{font-family:var(--fd);font-weight:800;font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;letter-spacing:-.03em;margin-bottom:2.5rem}
+.b-content{font-size:1.1rem;color:rgba(240,237,228,0.8);line-height:1.8}
+.b-content p{margin-bottom:1.8rem}
+.b-content h2{font-family:var(--fd);font-weight:700;font-size:1.6rem;color:var(--tx);margin:3rem 0 1.2rem}
+.b-content blockquote{border-left:2px solid var(--ac);padding-left:1.5rem;font-style:italic;color:var(--mt);margin:2rem 0}
+.b-content mark{background:var(--aca);color:var(--ac);padding:0 4px}
+
+/* FOOTER */
+footer{padding:4rem 0;border-top:1px solid rgba(255,255,255,.05);text-align:center}
+.fcp{font-family:var(--fm);font-size:.58rem;letter-spacing:.1em;color:var(--dim)}
+
+@media(max-width:600px){
+  .W{padding-left:20px;padding-right:20px;padding-top:100px}
+}
+</style>
+</head>
+<body>
+<div id="cur"></div><div id="cring"></div>
+
+<nav>
+  <a href="../index.html" class="nlogo">F<b>.</b></a>
+  <a href="../index.html#blog" class="nbtn">← Back to Blog</a>
+</nav>
+
+<article class="W">
+  <div class="b-meta">
+    <span>Feb 14, 2026</span>
+    <span>Growth Marketing</span>
+  </div>
+  <h1 class="b-title">The Death of Generic Funnels: AI Personalization at Scale</h1>
+  
+  <div class="b-content">
+    <p>We've all seen them: the static landing pages, the one-size-fits-all ad copy, and the "spray and pray" approach that dominated the early 2020s. But in 2026, audience fatigue at an all-time high. <strong>Personalization is no longer a luxury—it is the baseline for survival.</strong></p>
+
+    <p>When I was scaling <em>Zwiry</em>, I realized that our Karachi audience wasn't just one demographic. A 19-year-old in Gulshan-e-Iqbal has different aesthetic triggers than a professional in DHA. This is where <strong>Dynamic Creative Optimization (DCO)</strong> meets <strong>Gemini AI</strong>.</p>
+
+    <h2>The Micro-Trend Trap</h2>
+    <p>In Pakistan, trends move at the speed of a viral TikTok. By the time you've designed a static ad, the trend has often passed. We're now using AI to monitor real-time sentiment and literally <em>generate</em> ad copy that aligns with the specific vernacular and cultural moments of the day.</p>
+
+    <blockquote>"A funnel that doesn't adapt to the person inside it is just a very expensive drain."</blockquote>
+
+    <h2>How We're Scaling Zwiry</h2>
+    <p>By integrating AI into our Meta Ads workflow, we've moved from 3 variations to 300. Gemini doesn't just write the text; it understands the <em>why</em>. It knows when to use Urdu punchlines and when to lean into high-street luxury tones. Our ROAS hasn't just grown—it's become resilient.</p>
+
+    <p>The lesson for marketers in 2026 is clear: Stop talking <em>at</em> your audience and start building <em>for</em> them.</p>
+  </div>
+</article>
+
+<footer>
+  <div class="fcp">© 2026 Farhan — Crafted with intention.</div>
+</footer>
+
+<script>
+const cur=document.getElementById('cur'),cring=document.getElementById('cring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
+(function loop(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;cring.style.left=rx+'px';cring.style.top=ry+'px';requestAnimationFrame(loop)})();
+function hv(sel){document.querySelectorAll(sel).forEach(el=>{el.addEventListener('mouseenter',()=>{cur.style.width='5px';cur.style.height='5px';cring.style.width='54px';cring.style.height='54px';cring.style.borderColor='#FF6B2B'});el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';cring.style.width='38px';cring.style.height='38px';cring.style.borderColor='rgba(255,107,43,.4)'})})}
+hv('a,button');
+</script>
+</body>
+</html>
