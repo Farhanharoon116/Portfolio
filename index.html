@@ -2336,12 +2336,13 @@
           <div class="stag rv">Selected Work</div>
           <h2 class="rv d1">Projects that shipped.</h2>
         </div>
-        <div class="pcnt rv">012 Projects</div>
+        <div class="pcnt rv">016 Projects</div>
       </div>
       <div class="pflts rv d2">
         <button class="flt act" data-cat="all">All</button>
         <button class="flt" data-cat="web">Web App</button>
         <button class="flt" data-cat="mobile">Mobile</button>
+        <button class="flt" data-cat="saas">SaaS</button>
         <button class="flt" data-cat="ai">AI / ML</button>
         <button class="flt" data-cat="marketing">Marketing</button>
         <button class="flt" data-cat="hackathon">Hackathon</button>
@@ -2391,6 +2392,42 @@
       <div class="stag rv">Timeline</div>
       <h2 class="rv d1 sh2">Chapter by chapter.</h2>
       <div class="jtl">
+        <div class="ji rv">
+          <div class="jda">Apr 2026</div>
+          <div class="jdo"></div>
+          <div class="jco">
+            <div class="jty">Academic Platforms</div>
+            <div class="jti">◈ Discrete Logic & Physics Lab</div>
+            <div class="jsu">University Projects</div>
+            <p class="jde">Shipped two interactive academic platforms: A 3D Discrete Structures visualizer and a Virtual
+              Physics Lab, focusing on logic-based learning over memorization.</p>
+            <div class="jbg">Web App · University</div>
+          </div>
+        </div>
+        <div class="ji rv d1">
+          <div class="jda">Apr 2026</div>
+          <div class="jdo"></div>
+          <div class="jco">
+            <div class="jty">Product Launch</div>
+            <div class="jti">◈ StockPilot — E-commerce SaaS</div>
+            <div class="jsu">Built & Deployed</div>
+            <p class="jde">A high-performance inventory management and sales velocity dashboard for Amazon/Shopify
+              sellers. Features AI-driven forecasting and auto stockout alerts.</p>
+            <div class="jbg">Web App · AI</div>
+          </div>
+        </div>
+        <div class="ji rv">
+          <div class="jda">Mar 2026</div>
+          <div class="jdo"></div>
+          <div class="jco">
+            <div class="jty">Product Launch</div>
+            <div class="jti">⚡ SaathChalo — Community Ride-Sharing</div>
+            <div class="jsu">Mobile & Web App</div>
+            <p class="jde">A real-time ride-sharing platform optimizing urban commuting with a full authentication
+              system and dynamic route navigation.</p>
+            <div class="jbg">Flutter · Vercel</div>
+          </div>
+        </div>
         <div class="ji rv">
           <div class="jda">2025–Present</div>
           <div class="jdo"></div>
@@ -2718,6 +2755,10 @@
   <script>
     /* PROJECT DATA */
     const PD = [
+      { id: 'discretelogic', cat: ['web', 'university'], num: '015', title: 'Discrete Logic', emoji: '🎲', short: '3D Interactive Platform for Discrete Math.', desc: 'A high-performance 3D website built to visualize complex discrete mathematical structures. It features live calculation engines and real-world coding examples to move beyond theoretical memorization.', tags: ['React', 'Three.js', 'Node.js', 'Vercel'], cat_label: 'Web App · University Project', role: 'Developer', duration: 'Recent', status: 'Deployed', highlights: ['Interactive 3D visualizations of discrete structures', 'Live calculation engines', 'Real-world coding examples for logic-based learning'], skills: [{ n: 'React / Node.js', p: 80 }, { n: 'Three.js', p: 85 }, { n: 'Logic/Math', p: 82 }], liveUrl: 'https://discrete-project.netlify.app', githubUrl: 'https://github.com/Farhanharoon116/Discrete-project', bg: 'linear-gradient(135deg,#1f0a28 0%,#2d1045 100%)' },
+      { id: 'physicslab', cat: ['web', 'university'], num: '016', title: 'Physics Lab', emoji: '⚛️', short: 'Interactive Mechanics & Vector Calculus Simulations.', desc: 'An interactive simulation environment designed for dry-running physics scenarios. Built specifically to help students visualize vector calculus and mechanical systems through real-time logic-based simulations.', tags: ['React', 'JavaScript', 'CSS3', 'Logic-Engines'], cat_label: 'Web App · University Project', role: 'Developer', duration: 'Recent', status: 'Deployed', highlights: ['Real-time physics simulations', 'Vector calculus visualizations', 'Interactive mechanics experimentation'], skills: [{ n: 'React / JS', p: 80 }, { n: 'Physics/Math', p: 85 }, { n: 'Logic Engines', p: 75 }], liveUrl: 'https://physics-lab-bice.vercel.app', bg: 'linear-gradient(135deg,#0a1a10 0%,#153320 100%)' },
+      { id: 'stockpilot', cat: ['web', 'saas', 'ai'], num: '013', title: 'StockPilot', emoji: '📦', short: 'Inventory management & AI forecasting for Amazon/Shopify.', desc: 'A high-performance inventory management and sales velocity dashboard for Amazon/Shopify sellers. Features include automated stockout alerts, AI-driven reorder forecasting, and a Google Sheets sync pipeline to bypass complex API hurdles.', tags: ['React', 'Node.js', 'MongoDB', 'Gemini AI', 'Google Sheets API'], cat_label: 'Web App · SaaS · AI/ML', role: 'Full-Stack Developer', duration: 'Recent', status: 'Deployed', highlights: ['Automated stockout alerts for inventory tracking', 'AI-driven reorder forecasting using Gemini', 'Google Sheets sync pipeline to bypass API rate limits', 'High-performance metrics dashboard'], skills: [{ n: 'React / Node.js', p: 85 }, { n: 'MongoDB', p: 80 }, { n: 'Gemini AI', p: 82 }, { n: 'Google Sheets API', p: 75 }], liveUrl: 'https://stockpilot-umber.vercel.app/', bg: 'linear-gradient(135deg,#0d1f35 0%,#0a1628 100%)' },
+      { id: 'saathchalo', cat: ['mobile', 'web'], num: '014', title: 'SaathChalo', emoji: '🚗', short: 'Community ride-sharing platform for urban commuting.', desc: 'A real-time ride-sharing platform built to optimize urban commuting. Includes a full authentication system, dynamic route navigation, and a focus on community-driven transportation efficiency.', tags: ['Flutter', 'Dart', 'Firebase', 'Vercel'], cat_label: 'Mobile · Web App', role: 'Full-Stack Developer', duration: 'Recent', status: 'Deployed', highlights: ['Real-time ride-sharing functionality', 'Dynamic route navigation', 'Robust authentication system', 'Focus on community-driven transport efficiency'], skills: [{ n: 'Flutter / Dart', p: 80 }, { n: 'Firebase', p: 85 }, { n: 'Vercel', p: 75 }], liveUrl: 'https://saathchalo-liart.vercel.app/', githubUrl: 'https://github.com/Farhanharoon116/Saathchalo', bg: 'linear-gradient(135deg,#1a2a4a 0%,#0f172a 100%)' },
       { id: 'medflow', cat: ['web'], num: '001', title: 'MedFlow', emoji: '🏥', short: 'Full-stack clinic SaaS for private clinics in Pakistan.', desc: 'MedFlow is a complete clinic management SaaS platform targeting private clinics in Pakistan — built solo from concept to deployment. It handles patient records, appointment scheduling, AI-assisted clinical notes via Gemini, media uploads via Cloudinary, and JWT-secured multi-role authentication (admin, doctor, receptionist).', tags: ['React', 'Vite', 'Node.js', 'Express', 'MongoDB Atlas', 'JWT', 'Cloudinary', 'Gemini AI'], cat_label: 'Web App · SaaS', role: 'Solo Developer & Designer', duration: '3 months', status: 'Deployed', highlights: ['AI-powered clinical note assistant using Google Gemini', 'JWT multi-role auth — admin, doctor, receptionist roles', 'Cloudinary for patient media uploads and file management', 'MongoDB Atlas cloud database with optimised queries', 'Fully responsive React/Vite frontend with polished UI'], skills: [{ n: 'React / Vite', p: 85 }, { n: 'Node.js / Express', p: 82 }, { n: 'MongoDB', p: 78 }, { n: 'AI Integration', p: 80 }], liveUrl: 'https://medflow-website-delta.vercel.app/', githubUrl: 'https://github.com/Farhanharoon116/Medflow', bg: 'linear-gradient(135deg,#0a1628 0%,#1a2a4a 50%,#0d1f35 100%)' },
       { id: 'zwiry', cat: ['marketing'], num: '002', title: 'Zwiry', emoji: '👕', short: 'Clothing brand from scratch — 3× ROAS on first campaign.', desc: 'Zwiry is a clothing brand I conceptualized, branded, and launched from the ground up. From brand identity design to Facebook Ads, I handled every layer — product sourcing, funnel strategy, ad creative, and analytics. Achieved 3× ROAS on the first campaign with zero external investment.', tags: ['Facebook Ads', 'Brand Identity', 'Funnel Strategy', 'Canva', 'Meta Ads Manager', 'A/B Testing'], cat_label: 'Marketing · Brand', role: 'Founder & Creative Director', duration: 'Ongoing', status: 'Active', highlights: ['3× ROAS on the very first Facebook Ads campaign', 'Full brand identity — logo, colour palette, typography', 'End-to-end funnel: Awareness → Interest → Conversion', 'A/B tested ad creatives across multiple demographics', 'Built from PKR 0 with no external investment'], skills: [{ n: 'Facebook Ads', p: 85 }, { n: 'Brand Strategy', p: 80 }, { n: 'Funnel Design', p: 78 }, { n: 'Analytics', p: 72 }], bg: 'linear-gradient(135deg,#1a0a00 0%,#3a1800 100%)' },
       { id: 'tahwar', cat: ['web'], num: '003', title: 'Tahwar.pk', emoji: '💍', short: 'Pakistan\'s wedding service aggregator — 14 pages.', desc: 'Tahwar.pk is a 14-page wedding service aggregator for Pakistan, connecting families to venues, decorators, caterers, and photographers. Features vendor registration, real-time search, pricing tiers, blog, and an AI chat agent built with n8n + Google Gemini + Google Sheets for lead capture.', tags: ['HTML/CSS/JS', 'n8n', 'Gemini AI', 'Vercel', 'Firebase', 'Google Sheets'], cat_label: 'Web App · Startup', role: 'Conceptual Architect & Developer', duration: 'Ongoing', status: 'In Development', highlights: ['14-page multi-page site deployed on Vercel via GitHub', 'Vendor registration + login with authentication', 'Real-time search with category and price filters', 'n8n AI chat agent with Google Sheets lead capture', 'Blog for SEO content strategy and organic growth'], skills: [{ n: 'Frontend Dev', p: 80 }, { n: 'n8n Automation', p: 72 }, { n: 'AI Integration', p: 75 }, { n: 'Business Strategy', p: 82 }], liveUrl: 'https://tahwar-website.vercel.app/', githubUrl: 'https://github.com/Farhanharoon116/tahwar-website', bg: 'linear-gradient(135deg,#1a0f00 0%,#3a2800 100%)' },
